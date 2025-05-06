@@ -7,7 +7,7 @@ TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("مشاهده قرآن چندزبانه", web_app=WebAppInfo(url="https://quran-multilang.vercel.app"))]
+        [InlineKeyboardButton("مشاهده قرآن چندزبانه", web_app=WebAppInfo(url="https://v0-advanced-quran-website.vercel.app/"))]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text("سلام! برای مشاهده قرآن روی دکمه زیر کلیک کن:", reply_markup=reply_markup)
